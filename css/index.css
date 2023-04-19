@@ -167,18 +167,20 @@ footer{
   }
   
   .logo {
-    margin-bottom: 20px;
+    font-size: 30px;
   }
   
   nav {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   nav ul {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
     align-items: center;
+    font-size: larger;
   }
-  
   nav li {
     margin: 10px 0;
   }
@@ -196,6 +198,6 @@ footer{
   }
 
   .welcome-message {
-    margin-top: 230px;
+    margin-top: 115px;
   }
 }
