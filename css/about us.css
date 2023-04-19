@@ -79,23 +79,14 @@ h1 {
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
+  color: #999;
 }
 
-.about-section:hover{
-  color: white;
+.about-section{
+  background-image: url(../Images/about.jpg);
+  background-size: 100%;
 }
 
-.about-section:nth-child(3){
-    background-color: #3498db;
-}
-
-.about-section:nth-child(2){
-    background-color: #e67e22;
-}
-
-.about-section:nth-child(4){
-    background-color: #2ecc71;
-}
 
 .about-section h2 {
   font-size: 2rem;
@@ -195,6 +186,11 @@ h1 {
   background-color: #e74c3c;
 }
 
+.skill-list li:nth-of-type(6) .progress {
+  width: 85%;
+  background-color: rgb(152, 7, 50);
+}
+
 /* Footer styles */
 footer{
     text-align: center;
@@ -229,6 +225,7 @@ footer{
   nav li:not(:last-child)::after {
     display: none;
   }
+
   main h1 {
     margin-top: 80px;
   }
