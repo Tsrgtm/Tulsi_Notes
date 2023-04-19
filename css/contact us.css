@@ -247,10 +247,6 @@ footer{
     grid-gap: 20px;
   }
 
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-
   .grid-item:nth-child(1){
     margin-top: 35px;
   }
