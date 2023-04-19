@@ -239,10 +239,6 @@ footer{
     display: none;
   }
 
-  .about-section:nth-child(2){
-    margin-top: 110px;
-  }
-
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
@@ -253,7 +249,7 @@ footer{
   }
 
   .grid-item:nth-child(1){
-    margin-top: 150px;
+    margin-top: 35px;
   }
 
   .social-box i {
