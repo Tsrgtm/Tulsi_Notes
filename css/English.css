@@ -67,8 +67,8 @@ h1 {
 
 .unit-box {
   display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
@@ -184,7 +184,7 @@ footer{
   }
   
   .unit-box {
-    height: 150px;
+    height: 300px;
   }
 
   .unit-box:nth-child(2) {
