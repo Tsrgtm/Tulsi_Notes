@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tulsi Notes - English Notes</title>
+	<link rel="stylesheet" type="text/css" href="../css/English.css">
+</head>
+<body>
+	<header>
+  <a href="../index.html" style="text-decoration: none;"><div class="logo"><span style="color: #1abc9c; font-weight: bold; font-size: xx-large;">T</span>ulsi <span style="color: #1abc9c; font-weight: bold; font-size: xx-large;">N</span>otes</div></a>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="About us.html">About Us</a></li>
+				<li><a href="contact us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+  
+  <main>
+    <h1>English Notes</h1>
+    <div class="unit-box">
+      <h2>Unit One: Short Stories</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Select Chapter</button>
+        <div class="dropdown-content">
+          <a href="#">Neighbours - Tim Winton</a>
+          <a href="#">A Respectable Woman - Kate Chopin</a>
+          <a href="#">A Devoted Son - Anita Desai</a>
+          <a href="#">The Treasure in the Forest - H. G. Wells</a>
+          <a href="#">My Old Home - Lu Xun</a>
+          <a href="#">The Half-closed Eyes of the Buddha and the Slowly Sinking Sun -Shankar Lamichhane</a>
+          <a href="#">A Very Old Man with Enormous Wings - Gabriel Garcia Marquez</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="unit-box">
+      <h2>Unit Two: Poems</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Select Chapter</button>
+        <div class="dropdown-content">
+          <a href="#">A Day - Emily Dickinson</a>
+          <a href="#">Every Morning I Wake - Dylan Thomas</a>
+          <a href="#">I Was My Own Route - Julia de Burgos</a>
+          <a href="#">The Awakening Age - Ben Okri</a>
+          <a href="#">Soft Storm - Abhi Subedi</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="unit-box">
+      <h2>Unit Three: Essays</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Select Chapter</button>
+        <div class="dropdown-content">
+          <a href="#">On Libraries - Oliver Sacks</a>
+          <a href="#">Marriage as a Social Institution - Stephen L. Nock</a>
+          <a href="#">Knowledge and Wisdom - Bertrand Russell</a>
+          <a href="#">Humility - Yuval Noah Harari</a>
+          <a href="#">Human Rights and the Age of Inequality - Samuel Moyn</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="unit-box">
+      <h2>Unit Four: One-act Plays</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Select Chapter</button>
+        <div class="dropdown-content">
+          <a href="#">A Matter for Husband - Ferenc Molnar</a>
+          <a href="#">Facing Death - August Strindberg</a>
+          <a href="#">The Bull - Bhimnidhi Tiwari</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+	<footer>
+		<p>&copy; 2023 Tulsi Notes</p>
+	</footer>
+
+  <script>// get all buttons with class 'dropbtn'
+    var buttons = document.querySelectorAll(".dropbtn");
+    
+    // add event listener to each button
+    buttons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        // get the content element next to the clicked button
+        var content = this.nextElementSibling;
+    
+        // close previously opened content if any
+        document.querySelectorAll('.dropdown-content.expanded').forEach(function(expandedContent) {
+            if (expandedContent !== content) {
+                expandedContent.classList.remove('expanded');
+            }
+        });
+    
+        // toggle a class on the content element to expand/collapse it
+        content.classList.toggle("expanded");
+      });
+    });
+    
+    // add event listener to the entire document to close content on outside click
+    document.addEventListener('click', function(event) {
+        // get all content elements
+        var contents = document.querySelectorAll('.dropdown-content');
+    
+        // check if the click is outside the button and content area
+        if (!event.target.matches('.dropbtn') && !event.target.matches('.dropdown-content') && !event.target.closest('.dropdown-content')) {
+            // close all content elements
+            contents.forEach(function(content) {
+                content.classList.remove('expanded');
+            });
+        }
+    });
+  </script>
+  
+</body>
+</html>

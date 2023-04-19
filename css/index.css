@@ -1,0 +1,203 @@
+body {
+	background-color: #fff;
+	color: #333;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #fff;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+a{
+	text-decoration: none;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+	color: #2c3e50;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background-color: #b7b4b4;
+  margin-left: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #2c3e50;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+nav a:hover {
+	color: #1abc9c;
+}
+
+.active{
+	color: #1abc9c;
+}
+
+main {
+	margin-top: 80px;
+}
+
+/* Animation for Welcome Message */
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.welcome-message {
+  box-shadow: 2px 2px 2px 2px #1abc9c;
+  background-color: #fff; /* Use an eye-catching color for the background */
+  color: black; /* Use a contrasting color for the text */
+  padding: 20px;
+  margin-top: 70px;
+  text-align: center;
+  animation-name: slideInDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+.box {
+    border-radius: 20px;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	position: relative;
+	height: 100px;
+	text-align: center;
+}
+
+.box:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #1abc9c;
+	opacity: 0;
+	transition: all 0.3s ease;
+	z-index: -1;
+}
+
+.box:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box h2 {
+	font-size: 24px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	color: #f3f3f3;
+}
+
+.physics {
+	background-size: 1000px 200px;
+}
+
+.chemistry {
+	background-size: 1000px 200px;
+}
+
+.english {
+	background-size: 1000px 200px;
+}
+
+.nepali {
+	background-size: 1000px 200px;
+}
+
+.zoology {
+	background-size: 1000px 200px;
+}
+
+.botany {
+	background-size: 1000px 200px;
+}
+
+footer{
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 10px 0;
+  }
+  
+  nav li:not(:last-child)::after {
+    display: none;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .box {
+    height: 150px;
+  }
+
+  .welcome-message {
+    margin-top: 230px;
+  }
+}
+
+

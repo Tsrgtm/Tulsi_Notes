@@ -1,0 +1,320 @@
+body {
+	background-color: #fff;
+	color: #333;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #fff;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+a{
+	text-decoration: none;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+	color: #2c3e50;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background-color: #b7b4b4;
+  margin-left: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #2c3e50;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+nav a:hover {
+	color: #1abc9c;
+}
+
+.active{
+	color: #1abc9c;
+}
+
+main{
+    margin-top: 80px;
+}
+
+/* Contact Info Section */
+
+#contact-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.grid-item {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.grid-item:hover{
+    transform: scale(1.05);
+    color: white;
+}
+
+.grid-item:nth-child(2){
+    background-color: #3498db;
+}
+
+.grid-item:nth-child(1){
+    background-color: #e67e22;
+}
+
+.grid-item:nth-child(3){
+    background-color: #2ecc71;
+}
+
+/* Contact Form Section */
+
+#contact-form {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+#contact-form h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  color: #333;
+}
+
+.form-group {
+  margin: 25px 0;
+}
+
+label {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 20px;
+}
+
+textarea {
+  height: 200px;
+}
+
+button[type="submit"] {
+  background-color: #9b59b6;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #613074;
+}
+
+/* Social Media Section */
+
+#social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-box:hover {
+  transform: scale(1.1);
+}
+
+.social-box i {
+  font-size: 50px;
+  color: #1abc9c;
+}
+
+.connect{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+  background-color: #8BC34A;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer{
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 10px 0;
+  }
+  
+  nav li:not(:last-child)::after {
+    display: none;
+  }
+
+  .about-section:nth-child(2){
+    margin-top: 110px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item:nth-child(1){
+    margin-top: 150px;
+  }
+
+  .social-box i {
+    font-size: 30px;
+  }
+
+  .social-box {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+  }
+
+  #contact-form {
+    margin: 0 auto;
+  }
+  
+  #contact-form h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin: 10px 0;
+  }
+  
+  label {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 95%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+
+  button[type="submit"] {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  .connect{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .connect h2{
+    font-size: 28px;
+  }
+  
+  
+}
