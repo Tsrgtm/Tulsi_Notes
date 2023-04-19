@@ -227,14 +227,13 @@ footer{
     display: none;
   }
 
-  .about-section:nth-child(2){
+  .about-section:nth-child(1){
     margin-top: 110px;
   }
 
   .skill-list {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
-    height: 200px;
   }
 
   .progress {
