@@ -192,12 +192,10 @@ footer{
   }
   
   .box {
-    height: 150px;
+    height: 120px;
   }
 
   .welcome-message {
     margin-top: 230px;
   }
 }
-
-
