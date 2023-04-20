@@ -43,15 +43,15 @@
             <form id="contact-form-element" onsubmit="submitForm(Event)">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required style="border: none; outline: none; resize: none; border-radius: 0%;">
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required style="border: none; outline: none; resize: none; border-radius: 0%;">
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                <textarea id="message" name="message" placeholder="Enter your message" required style="border: none; outline: none; resize: none; border-radius: 0%;"></textarea>
               </div>
               <div class="form-group">
                 <button type="submit" id="submit-btn">Send</button>
@@ -60,6 +60,24 @@
             <div id="success-message" class="hidden">
               <p>Your message has been sent successfully!</p>
             </div>
+
+            <div>
+              <h2>Leave a Comment:</h2>
+              <div id="comment-form">
+                <label for="commenter-name">Name</label>
+                <input type="text" id="commenter-name" name="commenter-name" name="name" placeholder="Enter your name" required style="border: none; outline: none; resize: none; border-radius: 0%;"><br><br>
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" rows="1" placeholder="write a comment" style="border: none; outline: none; resize: none; border-radius: 0%;"></textarea><br><br>
+                <button type="button" id="submit-comment">Submit</button>
+              </div>
+            </div>
+            
+            <div class="show-comments">
+              <h2>Comments:</h2>
+              <button id="toggle-comments">Show Comments</button>
+              <div id="comment-section" style="display:none;"></div>
+            </div>
+            
           </section>   
           
         <div class="connect">
