@@ -100,19 +100,25 @@ main{
 /* Contact Form Section */
 
 #contact-form {
+  background-color: #1abc9c;
+  border-radius: 10px;
   max-width: 750px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 #contact-form h2 {
   text-align: center;
-  margin-top: 50px;
   font-size: 36px;
   color: #333;
 }
 
 .form-group {
-  margin: 25px 0;
+  margin: 20px 20px;
+}
+
+#comment-form {
+  margin: 20px 20px;
 }
 
 label {
@@ -125,19 +131,24 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
+  background-color: #29c4a5;
+  width: 90%;
   padding: 10px;
-  border-radius: 5px;
   border: 2px solid #ccc;
   font-size: 20px;
 }
 
 textarea {
-  height: 200px;
+  height: 25px;
 }
 
-button[type="submit"] {
-  background-color: #1abc9c;
+.show-comments {
+  display: none;
+}
+
+button[type="submit"],
+button[type="button"] {
+  background-color: black;
   color: #fff;
   font-size: 24px;
   padding: 10px 20px;
@@ -281,10 +292,11 @@ footer{
   }
   
   textarea {
-    height: 120px;
+    height: 25px;
   }
 
-  button[type="submit"] {
+  button[type="submit"],
+  button[type="button"] {
     font-size: 18px;
     padding: 5px 10px;
   }
