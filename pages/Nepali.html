@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tulsi Notes - Nepali Notes</title>
+	<link rel="stylesheet" type="text/css" href="../css/English.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1abc9c">
+  <meta charset="UTF-8">
+  <style>
+    @font-face {
+      font-family: 'Preeti';
+      src: url('preeti.ttf');
+    }
+    body {
+      font-family: 'Preeti', sans-serif;
+    }
+  </style>
+</head>
+<body>
+	<header>
+  <a href="../index.html" style="text-decoration: none;"><div class="logo"><span style="color: #1abc9c; font-weight: bold; font-size: xx-large;">T</span>ulsi <span style="color: #1abc9c; font-weight: bold; font-size: xx-large;">N</span>otes</div></a>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="About us.html">About Us</a></li>
+				<li><a href="contact us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+  
+  <main>
+    <h1>Nepali Notes</h1>
+    <div class="unit-box">
+      <h2>नेपाली</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Select Chapter</button>
+        <div class="dropdown-content">
+          <a href="#">१. आमाको सपना</a>
+          <a href="#">2. विरहिनी दमयन्ती</a>
+          <a href="#">३. घनघस्यको उकालो</a>
+          <a href="#">४. व्यवसायिक पत्र</a>
+          <a href="#">५ . एक चिहान</a>
+          <a href="#">६. स्टिफेन विलियम हाकिङ्</a>
+          <a href="#">७. हामीलाई बोलाउँछन् हिमचुली</a>
+          <a href="#">८. मातृत्व</a>
+          <a href="#">९. गोर्खे</a>
+          <a href="#">१०. नेपाली पहिचान</a>
+          <a href="#">११ . सहकारी</a>
+          <a href="#">12. जीवन मार्ग</a>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+	<footer>
+		<p>&copy; 2023 Tulsi Notes</p>
+	</footer>
+
+  <script>// get all buttons with class 'dropbtn'
+    var buttons = document.querySelectorAll(".dropbtn");
+    
+    // add event listener to each button
+    buttons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        // get the content element next to the clicked button
+        var content = this.nextElementSibling;
+    
+        // close previously opened content if any
+        document.querySelectorAll('.dropdown-content.expanded').forEach(function(expandedContent) {
+            if (expandedContent !== content) {
+                expandedContent.classList.remove('expanded');
+            }
+        });
+    
+        // toggle a class on the content element to expand/collapse it
+        content.classList.toggle("expanded");
+      });
+    });
+    
+    // add event listener to the entire document to close content on outside click
+    document.addEventListener('click', function(event) {
+        // get all content elements
+        var contents = document.querySelectorAll('.dropdown-content');
+    
+        // check if the click is outside the button and content area
+        if (!event.target.matches('.dropbtn') && !event.target.matches('.dropdown-content') && !event.target.closest('.dropdown-content')) {
+            // close all content elements
+            contents.forEach(function(content) {
+                content.classList.remove('expanded');
+            });
+        }
+    });
+  </script>
+  
+</body>
+</html>

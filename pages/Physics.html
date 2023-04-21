@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tulsi Notes - Physics Notes</title>
+	<link rel="stylesheet" type="text/css" href="../css/English.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1abc9c">
+</head>
+<body>
+	<header>
+  <a href="../index.html" style="text-decoration: none;"><div class="logo"><span style="color: #1abc9c; font-weight: bold; font-size: xx-large;">T</span>ulsi <span style="color: #1abc9c; font-weight: bold; font-size: xx-large;">N</span>otes</div></a>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="About us.html">About Us</a></li>
+				<li><a href="contact us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+  
+  <main>
+    <h1>Physics Notes</h1>
+    <div class="unit-box">
+      <h2>Mechanics</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Select Chapter</button>
+        <div class="dropdown-content">
+          <a href="#">1. Rotational Dynamics</a>
+          <a href="#">2. Periodic Motion</a>
+          <a href="#">3. Fluid Statics</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="unit-box">
+      <h2>Heat and Thermodynamics</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Select Chapter</button>
+        <div class="dropdown-content">
+          <a href="#">1. First Law of Thermodynamics</a>
+          <a href="#">2. Second Law of Thermodynamics</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="unit-box">
+      <h2>Wave and Optics</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Select Chapter</button>
+        <div class="dropdown-content">
+          <a href="#">1. Wave Motion</a>
+          <a href="#">2. Mechanical Waves</a>
+          <a href="#">3. Wave in Pipes and Strings</a>
+          <a href="#">4. Acoustic Phenomena</a>
+          <a href="#">5. Nature of Propagation of Light</a>
+          <a href="#">6. Interference</a>
+          <a href="#">7. Diffraction</a>
+          <a href="#">8. Polarization</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="unit-box">
+      <h2>Electricity and Magnetism</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Select Chapter</button>
+        <div class="dropdown-content">
+          <a href="#">1. Electrical Circuits</a>
+          <a href="#">2. Thermoelectric Effects</a>
+          <a href="#">3. Magnetic Field</a>
+          <a href="#">4. Magnetic Properties of Materials</a>
+          <a href="#">5. Electromagnetic Induction</a>
+          <a href="#">6. Alternating Currents</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="unit-box">
+      <h2>Modern Physics</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Select Chapter</button>
+        <div class="dropdown-content">
+          <a href="#">1. Electrons</a>
+          <a href="#">2. Photons</a>
+          <a href="#">3. Semiconductor Devices</a>
+          <a href="#">4. Quantization of Energy</a>
+          <a href="#">5. Radioactivity and Nuclear Reaction</a>
+          <a href="#">6. Recent Trends in Physics</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+	<footer>
+		<p>&copy; 2023 Tulsi Notes</p>
+	</footer>
+
+  <script>// get all buttons with class 'dropbtn'
+    var buttons = document.querySelectorAll(".dropbtn");
+    
+    // add event listener to each button
+    buttons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        // get the content element next to the clicked button
+        var content = this.nextElementSibling;
+    
+        // close previously opened content if any
+        document.querySelectorAll('.dropdown-content.expanded').forEach(function(expandedContent) {
+            if (expandedContent !== content) {
+                expandedContent.classList.remove('expanded');
+            }
+        });
+    
+        // toggle a class on the content element to expand/collapse it
+        content.classList.toggle("expanded");
+      });
+    });
+    
+    // add event listener to the entire document to close content on outside click
+    document.addEventListener('click', function(event) {
+        // get all content elements
+        var contents = document.querySelectorAll('.dropdown-content');
+    
+        // check if the click is outside the button and content area
+        if (!event.target.matches('.dropbtn') && !event.target.matches('.dropdown-content') && !event.target.closest('.dropdown-content')) {
+            // close all content elements
+            contents.forEach(function(content) {
+                content.classList.remove('expanded');
+            });
+        }
+    });
+  </script>
+  
+</body>
+</html>
