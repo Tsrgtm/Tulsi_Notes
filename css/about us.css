@@ -83,8 +83,7 @@ h1 {
 }
 
 .about-section{
-  background-image: url(../Images/about.jpg);
-  background-size: 100%;
+  background: transparent;
 }
 
 
