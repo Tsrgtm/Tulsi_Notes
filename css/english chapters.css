@@ -87,9 +87,10 @@ h1 {
 
 h2 {
   font-size: 24px;
-  text-decoration: underline;
   padding: 10px;
   padding-bottom: 0rem;
+  background-color: #1abc9c;
+  color: black;
 }
 
 .dropdown {
@@ -147,6 +148,7 @@ footer{
   
   .unit-box {
     min-height: 130px;
+    border-radius: 20px;
     padding: 10px;
     margin-bottom: 10px;
   }
